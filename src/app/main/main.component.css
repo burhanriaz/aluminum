@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://www.designspb.ru/upload/medialibrary/c8d/fractal_urban_planning_01.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 90vh;
+    
+}
+.main{
+    height: 85vh;
+}
+.image-section {
+    padding-top: 200px;
+    margin-left: 100px;
+}
+.image-section h1{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.image-section p{
+    font-size: 23px;
+    font-family: sans-serif;
+}
+.btn button{
+    padding: 17px;
+    width: 160px;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+}
