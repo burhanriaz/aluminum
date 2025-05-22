@@ -1,7 +1,8 @@
 .main{
     width: 100%;
     height: 90vh;
-    background-image: url(https://www.designspb.ru/upload/medialibrary/c8d/fractal_urban_planning_01.jpg);
+    background-image: url('/assets/fractal_urban_planning_01.jpg');
+
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -27,14 +28,18 @@
     padding: 17px;
     width: 160px;
     font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4);;
+    color: black;
+    font-weight: bolder;
     background: transparent;
     border: none;
-    border: 1px solid black;
+    
     border-radius: 5px;
     font-family: sans-serif;
 }
 .btn button:hover{
-    background-color: black;
-    color: white;
+    background-color: #26D48C;
+    color: black;
     transition: 0.8s;
 }
