@@ -1,15 +1,12 @@
-
-<div class="Project-section">
-    <div class="head">
-    <h1>Our Projects</h1>
-</div>
-<div class="line"></div>
-    <div class="Project-grid">
-      <div class="Project-card" *ngFor="let Project of Project">
-        <img [src]="Project.image" alt="{{ Project.title }}">
-        <h3>{{ Project.title }}</h3>
-        <p>{{ Project.description }}</p>
-      </div>
+<div class="project-section">
+  <h2>Our Projects</h2>
+  <div class="head">
+  </div>
+  <div class="project-grid">
+    <div class="project-card" *ngFor="let Project of Project">
+      <img [src]="Project.image" alt="{{ Project.title }}">
+      <h3>{{ Project.title }}</h3>
+      <p>{{ Project.description }}</p>
     </div>
   </div>
-  
+</div>

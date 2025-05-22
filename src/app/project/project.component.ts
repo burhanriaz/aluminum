@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './Project.component.html',
   styleUrls: ['./Project.component.css']
 })
@@ -29,7 +29,7 @@ export class ProjectComponent {
     {
       title: 'Banque Saudi Fransi',
       image: 'assets/p4.png',
-description: 'All external destinations work. Aluminum and glass works for doors, windows and partitions'
+      description: 'All external destinations work. Aluminum and glass works for doors, windows and partitions'
     },
     {
       title: 'Ministry of National Guard',
@@ -40,7 +40,7 @@ description: 'All external destinations work. Aluminum and glass works for doors
     {
       title: 'Ministry of Eduction',
       image: 'assets/p6.png',
-description: `All doors, windows and stairs works
+      description: `All doors, windows and stairs works
 External interfaces
 Glass works`
     }
@@ -54,9 +54,7 @@ Glass works`
     {
       title: 'Al Baraha ',
       image: 'assets/s8.png',
-description: `used in interior & exterior works
-for doors, windoes
-used fir safety and privacy`
+      description: `used in interior & exterior works for doors, windoes used fir safety and privacy`
     }
     ,
     {

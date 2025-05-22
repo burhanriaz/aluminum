@@ -1,34 +1,38 @@
 .image img{
-    width: 300px;
-    height: 200px;
-    gap: 100px;
+    /* width: 300px;
+    height: 250px; */
+    gap: 120px;
+
+    width:  300px;
+    height: 250px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 .images{
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .image-gallery{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 22px;
 }
-.image-gallery h1{
-    margin-left: 200px;
-    font-family: sans-serif;
-}
-.line{
-    height: 1px;
-    width: 1450px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.image-gallery h2{
     text-align: center;
-    margin-left: 300px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #000000;
 }
-.image h2{
-    font-size: 23px;
-    font-family: sans-serif;
+
+.line{
+    height: 2px;
+    width: 80%;
+    background-color: black;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }

@@ -1,14 +1,10 @@
 * {
   box-sizing: border-box;
-
 }
 
 .custom-footer {
-  background-color: #26D48C;
+  background-color: #c1d0d9;
   color: black;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 5px 20px 30px;
-  width: 100%;
 }
 
 .footer-container {
@@ -19,47 +15,50 @@
 .footer-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 10px;
   justify-content: space-between;
 }
 
 .footer-col {
   flex: 1;
-  min-width: 200px;
+  min-width: 150px;
+  margin-left: 50px;
+  line-height: 15px;
 }
 
 .footer-about {
-  flex: 2;
+  min-width: 250px;
+  flex: 1;
+  line-height: 15px;
 }
 
 .brand {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 25px;
+  color: #000;
 }
 
 .brand .highlight {
-    color: black;
-
+  color: black;
 }
 
 .desc {
   margin-top: 10px;
-  line-height: 1.6;
-    color: black;
-  font-size: 18px;
-  font-weight: 500;
-
+  line-height: 1.5;
+  color: black;
+  font-size: 14px;
+  font-weight: 250;
 }
 
 .social-icons {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .footer-col h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-    color: black;
-
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: black;
   border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 5px;
@@ -68,19 +67,18 @@
 .footer-col ul {
   list-style: none;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-col ul li {
   margin-bottom: 10px;
-  font-size: 19px;
-  font-weight: 500;
-    color: black;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
 }
 
 .footer-col ul li a {
-    color: black;
-
+  color: black;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -102,11 +100,11 @@
 
 .footer-bottom {
   text-align: center;
-  margin-top: 25px;
-  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
   color: black;
-  font-weight: 500;
-  padding-top: 25px;
+  font-weight: 200;
   border-top: 1px solid white;
 }
 
@@ -137,8 +135,8 @@
 /* Social Container - Base */
 .socialContainer {
   border-radius: 50%;
-  width: 52px;
-  height: 52px;
+  width: 30px;
+  height: 30px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -216,19 +214,16 @@
   max-width: 350px;
 }
 
-.custom-footer {
-  padding: 5px 20px 30px;
-}
-
 .footer-col,
 .footer-about,
 .contact-info {
   word-wrap: break-word;
 }
 
-.brand span{
+.brand span {
   color: black;
 }
-.brand{
+
+.brand {
   color: white;
 }

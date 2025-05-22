@@ -1,28 +1,20 @@
 .main{
-    width: 100%;
-    height: 90vh;
     background-image: url('/assets/fractal_urban_planning_01.jpg');
-
     background-repeat: no-repeat;
-    width: 100%;
     background-size: cover;
+    width: 100%;
     height: 90vh;
-    
 }
-.main{
-    height: 85vh;
-}
+
 .image-section {
     padding-top: 200px;
     margin-left: 100px;
 }
 .image-section h1{
     font-size: 40px;
-    font-family: sans-serif;
 }
 .image-section p{
     font-size: 23px;
-    font-family: sans-serif;
 }
 .btn button{
     padding: 17px;
@@ -34,9 +26,7 @@
     font-weight: bolder;
     background: transparent;
     border: none;
-    
     border-radius: 5px;
-    font-family: sans-serif;
 }
 .btn button:hover{
     background-color: #26D48C;

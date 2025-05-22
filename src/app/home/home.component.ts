@@ -10,7 +10,7 @@ import { CountComponent } from '../count/count.component';
 @Component({
   selector: 'app-home',
   standalone : true,
-  imports: [EquipmentsComponent,ServicesComponent,ProjectComponent,ClientComponent],
+   imports: [EquipmentsComponent,ServicesComponent,ProjectComponent,ClientComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
