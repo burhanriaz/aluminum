@@ -1,29 +1,4 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: sans-serif;
-  }
-  
-  app-root {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .content-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .hero {
+.hero {
   background: url('https://emirfab.com/wp-content/uploads/2023/09/Aluminium-Fabrication-2.jpg') center center/cover no-repeat;
   position: relative;
   height: 500px;

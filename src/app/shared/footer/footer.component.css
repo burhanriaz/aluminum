@@ -47,8 +47,8 @@
   margin-top: 10px;
   line-height: 1.5;
   color: black;
-  font-size: 14px;
-  font-weight: 250;
+  font-size: 16px;
+  font-weight: 350;
 }
 
 .social-icons {
@@ -67,12 +67,12 @@
 .footer-col ul {
   list-style: none;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-col ul li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: black;
 }
@@ -225,5 +225,6 @@
 }
 
 .brand {
-  color: white;
+  color: black;
+  font-size: 22px;
 }

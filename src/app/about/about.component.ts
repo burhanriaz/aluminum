@@ -5,7 +5,7 @@ import { CountComponent } from '../count/count.component';
 
 @Component({
   selector: 'app-about',
-  imports: [RouterModule,CommonModule],
+  imports: [RouterModule,CommonModule,CountComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
