@@ -2,89 +2,199 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
 }
 
-.navlist {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  background-color: #c1d0d9;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0px 4px 10px #1a1a1a;
+/* Nav Items */
+.nav-links li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #2e2929;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-left: 15px;
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: #6D0C48;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.contact-btn:hover {
+  background-color: #9c1e6b;
+}
+
+
+.nav-links {
   height: 10vh;
 }
 
-.navlist ul {
+.navbar li a {
+  font-size: 17px;
+}
+
+header.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 45px;
-  list-style: none;
-}
-
-.navlist ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-}
-
-.navlist ul li a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  transform: translateX(-50%) scaleX(0);
+  background-color: #C1D0D9;
+  height: 60px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 2px;
-  background-color: #000;
-  transition: transform 0.3s ease;
-}
-
-.navlist ul li a:hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  height: 9vh;
 }
 
 .logo img {
-  width: 70px;
+  width: 80px;
   height: 70px;
   border-radius: 50%;
+  margin-left: 100px;
 }
 
-.logo h2 {
-  color: white;
+
+.navbar ul {
+  margin-right: 0;
+  padding-right: 200px;
 }
 
-.logo span {
-  color: black;
-}
-
-.shure a {
-  display: flex;
-  border-radius: 6px;
-  overflow: hidden;
+.navbar li a {
+  font-size: 20px;
+  padding: 0 15px;
   font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
 }
 
-.shure .left {
-  background-color: black;
+.contact-btn:hover {
+  background-color: #6D0C48;
   color: white;
-  padding: 10px 16px;
 }
 
-.shure .right {
-  background-color: #D1D1D1;
-  color: #222;
-  padding: 10px 16px;
+.navbar a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+@media (max-width: 1260px) {
+  .nav-links {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+    
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    
+  }
+
+  .logo img {
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .navbar ul {
+    margin-right: 0;
+    padding-right: 0;
+    transition: 0.5s;
+  }
+  
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: slideIn 0.4s forwards;
+  }
+
+  .nav-links li:nth-child(1) { animation-delay: 0.1s; }
+  .nav-links li:nth-child(2) { animation-delay: 0.2s; }
+  .nav-links li:nth-child(3) { animation-delay: 0.3s; }
+  .nav-links li:nth-child(4) { animation-delay: 0.4s; }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .hamburger{
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width:1270px) {
+
+  .logo img{
+    margin-left: 70px;
+  }
+  
+}
+@media screen and (max-width:1247px) {
+
+  .logo img{
+    margin-left: 70px;
+  }
+  .hamburger{
+    margin-right: 30px;
+  }
 }

@@ -1,4 +1,4 @@
-<div class="main">
+<!-- <div class="main">
     <div class="navlist">
       <div class="logo">
         <img src="assets/logo1.png" alt="Logo" />
@@ -17,5 +17,24 @@
         </li>
       </ul>
     </div>
+  </div> -->
+<div class="main">
+  <header class="navbar">
+  <div class="logo">
+    <img src="./assets/logo.png" alt="Bin Yousaf Logo">
   </div>
+
+  <div class="hamburger" (click)="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/services">services</a></li>
+    <li><a routerLink="/project">project</a></li>
+    <li><a routerLink="/contact">contact</a></li>
+  </ul>
+</header>
+</div>
   

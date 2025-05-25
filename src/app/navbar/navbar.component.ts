@@ -9,5 +9,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+toggleMenu(): void {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      navLinks.classList.toggle("active");
+    }
+  }
 }
